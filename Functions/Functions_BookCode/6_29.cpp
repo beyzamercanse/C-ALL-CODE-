@@ -18,7 +18,7 @@ void functionA()
     cout << "This program terminates with the exit function.\n";
     cout << "Bye!\n";
     exit(0); // or you can type EXIT_SUCCESS
-    cout << "This message will never be displayed\n because the program has already terminated.\n";
+    cout << "This message will never be displayed\n because the program has already terminated.";
 }
 
 
