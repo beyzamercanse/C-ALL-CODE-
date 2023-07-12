@@ -1,6 +1,12 @@
 {
     "files.associations": {
         "*.cpp": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "__bit_reference": "cpp",
+        "bitset": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "chrono": "cpp"
     }
 }
