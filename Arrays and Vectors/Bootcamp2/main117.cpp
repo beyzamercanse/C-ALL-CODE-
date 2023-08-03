@@ -37,12 +37,18 @@ cout << " - - - - - - - - - - - - - - - - - - - -  -" << endl;
     }
 
 // rand sequence will be the same everytime. apple-apple-apple
-// if you wanna change it: apple - mango - pineapple : use time(0)
+// if you wanna change it: apple - mango - pineapple : add  time(0) 
 
 cout << " - - - - - -- - - - - - - - - - - --- - - - - - - " << endl;
 
     // int random_num_ = rand();
     // cout << "random num: " << random_num << endl;
+    int random_num_newest = (rand()%15) + 1;
+
+    for (size_t i=0; i<30; ++i) {
+        random_num_newest = (rand()%15) +1; // wiill be between [1-15]
+        cout << "number["<<i<<"]:  " << random_num_newest << endl;
+    }
 
 
     return 0;
