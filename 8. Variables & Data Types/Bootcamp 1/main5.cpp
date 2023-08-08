@@ -1,4 +1,4 @@
-// AUTO
+// AUTO = it tells the compiler to infer the type of an expression and use that as the type for our variable
 
 #include <iostream>
 using namespace std;
@@ -38,9 +38,9 @@ int main(){
     cout << sizeof(var8) << endl; // 8 // long long int
 
     // BE CAREFUL ABOUT AUTO ASSIGNMENTS. 
-    auto var_new = 333u;
-    var3 = -22;
-    cout << "var3:  " << var3 << endl;
+    auto var_new = 333u; // means its a positive integer? but --> 
+    var_new = -22; /// assigned to negative here. its a disaster
+    cout << "var3_new is :  " << var_new << endl; // var_new:  4294967274
 
     return 0;
 }
