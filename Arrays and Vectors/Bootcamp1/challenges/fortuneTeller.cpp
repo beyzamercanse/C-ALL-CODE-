@@ -8,16 +8,16 @@ int main(){
 
 
 
-    char prediction0[]={ "a lot of kinds running in the backyard!" };
-    char prediction1[]={ "a lot of empty beer bootles on your work table." };
-    char prediction2[]={ "you Partying too much with kids wearing weird clothes." };
-    char prediction3[]={ "you running away from something really scary" };
-    char prediction4[]={ "clouds gathering in the sky and an army standing ready for war" };
-    char prediction5[]={ "dogs running around in a deserted empty city" };
-    char prediction6[]={ "a lot of cars stuck in a terrible traffic jam" };
-    char prediction7[]={ "you sitting in the dark typing lots of lines of code on your dirty computer" };
-    char prediction8[]={ "you yelling at your boss. And oh no! You get fired!" };
-    char prediction9[]={ "you laughing your lungs out. I've never seen this before." };
+    char prediction0[]={ "a blonde with blue eyes" };
+    char prediction1[]={ "a brown with brown eyes." };
+    char prediction2[]={ "a blonde with brown eyes" };
+    char prediction3[]={ "a brown with hazel eyes" };
+    char prediction4[]={ "a brown with blue eyes" };
+    char prediction5[]={ "a blonde with hazel eyes" };
+    char prediction6[]={ "a black with brown eyes" };
+    char prediction7[]={ "a black with green eyes" };
+    char prediction8[]={ "a black with hazel eyes" };
+    char prediction9[]={ "a brow with green eyes" };
 
     bool end = false;
     const int max_length = 15; // use const for array size ALWAYS !
@@ -71,9 +71,9 @@ int main(){
         std::cout << "Do you want me to try again ? (Y | N) : ";
 
         char go_on;
-        std::cin >> go_on;
+        cin >> go_on;
 
-        end = ((go_on == 'Y') || (go_on == 'y')) ? false : true;
+        end = ((go_on == 'Y') || (go_on == 'y')) ? false : true; // if this = false, else= true
 
     }
 
@@ -81,3 +81,4 @@ int main(){
 
     return 0;
 }
+
