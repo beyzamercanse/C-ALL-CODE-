@@ -3,8 +3,8 @@ using namespace std;
 
 int main(){
 
-    int data1[] = {1,2,4,5,9,3,6,7,44,55}; 
-    int data2[] = {11,2,44,45,49,43,46,47,55,88};
+    int data1[] = {1,2,24,5,9,3,83,7,44,21}; 
+    int data2[] = {11,21,2,44,45,24,49,83,90,88};
 
     int elementNum1 = sizeof(data1)/sizeof(data1[0]); // num of elements in data1
     int elementNum2 = sizeof(data2)/sizeof(data2[0]); // num of elements in data1

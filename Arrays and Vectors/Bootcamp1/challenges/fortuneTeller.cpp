@@ -7,6 +7,7 @@ int main(){
     std::srand(std::time(0)); // Seed
 
 
+/*
 
     char prediction0[]={ "a blonde with blue eyes" };
     char prediction1[]={ "a brown with brown eyes." };
@@ -19,6 +20,20 @@ int main(){
     char prediction8[]={ "a black with hazel eyes" };
     char prediction9[]={ "a brow with green eyes" };
 
+*/
+
+    char prediction[][90] = {
+        " stanford university",
+        " mit ",
+        " harvard university ",
+        " zurich eth ",
+        "columbia university  ",
+        " munich tech ",
+        "oxford university  ",
+        " lse "
+    };
+
+
     bool end = false;
     const int max_length = 15; // use const for array size ALWAYS !
     char name[max_length];
@@ -27,10 +42,13 @@ int main(){
     cin.getline(name, max_length); // get input with spaces
 
     while (!end) {
-        std::cout << "Oh dear " << name << ", I see ";
+        std::cout << "Oh dear " << name << ", I see that for graduate school you will go to this university : ";
+        size_t rand_num = static_cast<size_t>((rand() % sizeof(prediction)/sizeof(prediction[0])));
+        cout << prediction[rand_num] << std::endl;
 
-        size_t rand_num = static_cast<size_t>((std::rand() % 11));
+        // size_t rand_num = static_cast<size_t>((std::rand() % 11));
 
+        /*
         switch (rand_num) { // [0~10]
         case 0:
             std::cout << prediction0 << std::endl;
@@ -68,6 +86,8 @@ int main(){
         default:
             std::cout << ", huum, I don't see anything" << std::endl;
         }
+        */
+
         std::cout << "Do you want me to try again ? (Y | N) : ";
 
         char go_on;
