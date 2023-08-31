@@ -12,7 +12,7 @@ int main(){
 
     int number=5; // not constant, can change nnumber any way we want
     cout << "number: " << number << endl;
-    cout << "&number (the memory adress of number):   " << &number << endl;
+    cout << "&number (the memory adress of number):   " << &number << endl; //number changed but the adress wont change. !!!!
     // modify
     number=12;
     number+=7;
@@ -28,8 +28,14 @@ int main(){
     number: 5
     &number: (the memory adress of number)0x7ff7b78a1268
     number: 19
-    &number: 0x7ff7b78a1268
+    &number: 0x7ff7b78a1268, same adressssss
     */
+
+
+   // When you modify the value of an int variable, 
+   // the address of that variable remains the same. 
+   // This is because the address of a variable refers to the memory location where the variable's value is stored, 
+   // and changing the value of the variable doesn't necessarily mean that the variable has moved to a different memory location.
 
     cout << endl;
     cout << endl;
@@ -176,3 +182,52 @@ Changing the address where p_number7 is pointing (Compile Error).
     return 0;
 }
 
+/*
+
+Const pointers in C++
+Const pointers in C++ are pointers that point to a constant value, and they come with a few important rules to understand. Let's dive into these rules!
+Pointer to a Constant Value (const int* ptr or int const* ptr):
+
+You can modify the pointer itself, but not the value it points to. In another words, you can change pointer but the value it points out will not change. For example:
+int value = 5;
+const int* ptr = &value;  
+// Valid:
+ptr = nullptr;  // You can change where the pointer points
+// Invalid:
+*ptr = 10;      // You can't modify the value pointed to by ptr
+
+
+2. Constant Pointer to a Value (int* const ptr):
+You can modify the value it points to, but not the pointer itself. For example:
+int value = 5;
+int* const ptr = &value;
+// Invalid:
+ptr = nullptr;  // You can't change the pointer itself
+// Valid:
+*ptr = 10;      // You can modify the value pointed to by ptr
+
+
+3. Constant Pointer to a Constant Value (const int* const ptr or int const* const ptr):
+You can not modify both the pointer itself and the value it points to. For example:
+int value = 5;
+const int* const ptr = &value;
+// Invalid:
+ptr = nullptr;  // You can't change the pointer itself
+*ptr = 10;      // You can't modify the value pointed to by ptr
+
+
+********************************************************
+Additional points to note:
+A pointer to a constant value is often used to prevent modifying the value through that pointer, especially when passing arguments to functions where you want to ensure that the function doesn't change the original value.
+A constant pointer to a value is used when you want to ensure that the pointer itself doesn't change once it's initialized.
+The const modifier applies to what's on its left first. So, const int* and int const* are equivalent, both indicating a pointer to a constant integer. On the other hand, int* const indicates a constant pointer to an integer.
+
+Here's a quick summary →
+const int* ptr: Pointer to a constant integer. ( ←)
+int* const ptr: Constant pointer to an integer. (←)
+const int* const ptr: Constant pointer to a constant integer. (← →)
+
+
+
+
+*/
