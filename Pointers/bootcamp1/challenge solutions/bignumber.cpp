@@ -19,16 +19,29 @@ int main(){
 
     int max_number = data[0];
 
+    // find max number
     for (size_t i=1; i<array_size; ++i){
-        // cout << data[i] << " "; // array values 
-        if (data[i]>data[0]){
+        if (data[i]>max_number){
             max_number=data[i];
         }
     }
 
-    cout << max_number << endl;
-        
+    // cout << max_number << endl;
+    int *max_adress = &max_number;
+    cout << "data[]'s max number is : " << max_number <<  " and, it's adress is : " << max_adress << endl;
+
 
 
     return 0;
 }
+
+/*
+
+while (i < array_size) {
+        if (data[i] > max_number) {
+            max_number = data[i];
+        }
+        i++;
+    }
+
+*/
