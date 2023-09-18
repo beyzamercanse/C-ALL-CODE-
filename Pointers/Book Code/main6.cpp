@@ -1,4 +1,12 @@
 // This program processes an array using pointer notation.
+
+/*
+
+When working with arrays, remember the following rule: 
+array[index]   =====    *(array + index)
+
+
+*/
 #include <iostream>
 using namespace std;
 
@@ -22,3 +30,4 @@ int main()
    cout << endl;
    return 0;
 }
+

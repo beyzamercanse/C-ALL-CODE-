@@ -31,7 +31,9 @@ int main()
 void getNumber(int *input)
 {
    cout << "Enter an integer number: ";
-   cin >> *input;
+   cin >> *input; 
+   // Each one uses the notation int * to indicate the parameter is a pointer to an int. 
+   // The indirection operator causes the value entered by the user to be stored, not in input, but in the variable pointed to by input.
 }
 
 //***************************************************************

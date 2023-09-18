@@ -1,4 +1,7 @@
 // This program stores the address of a variable in a pointer.
+// the nullptr key word was introduced to represent the address 0. 
+// When a pointer is set to the address 0, it is referred to as a null pointer because it points to “nothing.” 
+
 #include <iostream>
 using namespace std;
 

@@ -33,7 +33,11 @@ void displayValues(const int *numbers, int size)
    // Display all the values.
    for (int count = 0; count < size; count++)
    {
-      cout << *(numbers + count) << " ";
+      cout << *(numbers + count) << " ";  //numbers[count]
    }
    cout << endl;
 }
+
+
+// 1 2 3 4 5 6 
+// 2 4 6 8 10 12 

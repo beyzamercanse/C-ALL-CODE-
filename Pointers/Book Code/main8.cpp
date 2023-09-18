@@ -23,3 +23,6 @@ int main()
    cout << endl;
    return 0;
 }
+
+// Here are the values in the coins array:
+// 0.05 0.1 0.25 0.5 1 

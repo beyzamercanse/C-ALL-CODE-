@@ -1,4 +1,6 @@
 // This program uses a pointer to display the contents of an array.
+// Because numPtr is a pointer to an integer, the increment operator adds the size of one integer to numPtr, 
+// so it points to the next element in the array. same for decrementatiion
 #include <iostream>
 using namespace std;
 
@@ -29,3 +31,10 @@ int main()
    }
    return 0;
 }
+/*
+The numbers in set are:
+5 10 15 20 25 30 35 40 
+The numbers in set backward are:
+40 35 30 25 20 15 10 5
+*/
+

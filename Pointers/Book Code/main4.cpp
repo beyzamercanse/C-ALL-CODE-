@@ -10,7 +10,7 @@ int main()
 
    // Display the contents of x, y, and z.
    cout << "Here are the values of x, y, and z:\n";
-   cout << x << " " << y << " " << z << endl;
+   cout << x << " " << y << " " << z << endl; // 25 50 75
 
    // Use the pointer to manipulate x, y, and z.
 
@@ -25,6 +25,15 @@ int main()
 
    // Display the contents of x, y, and z.
    cout << "Once again, here are the values of x, y, and z:\n";
-   cout << x << " " << y << " " << z << endl;
+   cout << x << " " << y << " " << z << endl; // 125 150 175
    return 0;
 }
+
+/*
+
+Here are the values of x, y, and z:
+25 50 75
+Once again, here are the values of x, y, and z:
+125 150 175
+
+*/
