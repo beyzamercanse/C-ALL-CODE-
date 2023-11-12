@@ -1,0 +1,7 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/beyzamercan/Desktop/C++ ALL CODE /Char & Strings/main1'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003EE0, symSize: 0x8B }
+  - { offsetInCU: 0x2CBA, offset: 0x2CBA, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003EE0, symSize: 0x8B }
+...
