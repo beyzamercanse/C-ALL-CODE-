@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <cstring> // char-string 
 using namespace std;
 
 int main() {
