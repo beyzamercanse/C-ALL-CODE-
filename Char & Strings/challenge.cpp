@@ -46,10 +46,23 @@ int main(){
     cout << "the message is : ";
     getline(cin, message);
 
-    // now do the encription/decription
+    // ENCRIPTION
+    string encripted_message {};
+    cout << "- - - - - - - - - - - - - ENCRIPTION - - - - - - - - - - - - - - " << endl;
+    // now do the encription
     for (size_t i=0; i < message.length(); ++i){
         size_t position = alphabet.find(message[i]);
         cout << key[position];
+    }
+
+    cout << "\n";
+
+    // Decription
+    cout << "- - - - - - - - - - - - - DECRIPTION - - - - - - - - - - - - - - " << endl;
+    // now do the decription
+    for (size_t i=0; i < message.length(); ++i){
+        size_t position = key.find(message[i]);
+        cout << alphabet[position];
     }
 
     cout << endl;
